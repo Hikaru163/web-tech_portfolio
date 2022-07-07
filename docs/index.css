@@ -15,17 +15,46 @@
 }
 
 
-ul.topmenu li.topmenu{
+ul.topmenu li.menu{
     list-style: none;
     overflow: hidden;
     float: left;
 }
+
+#Wroks {
+    margin-top: 1px;
+}
+
+.Works {
+    margin-top: 30px;
+}
+
 
 .Works_doc {
     max-width: 95%;
     padding-left: 5%;
 }
 
+.works_doc iframe {
+    height: 65vh;
+}    
+
+.work_pic {
+    width: 50%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+.works-slide iframe {
+    width: 100%;
+    height: 65vh;
+}    
+
+.Works video{
+    max-width: 90%;
+    padding-left: 5%; 
+}
 
 hr {
     height: 1px;
@@ -46,7 +75,7 @@ hr {
 }
 
 img{
-    width: 100%;
+    width: 50%;
     height: auto;
 }
 
@@ -79,7 +108,7 @@ li.menu {
     list-style: none;
 }
 
-a{
+ul.topmenu li a{
     display: block;
     text-decoration: none;
     color: white;
