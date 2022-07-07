@@ -3,50 +3,86 @@
 
   <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-
-    <title>Portfolio</title>
-
+    <title>Tomihara's Portfolio</title>
     <link href="index.css" rel="stylesheet" type="text/css">
 
   </head>
 
   <body>
-    <nav>
-      <ul class="menu">
-          <li class="menu"><a href="#about">About</a></li>
-          <li class="menu"><a href="#skill">Skill</a></li>
-          <li class="menu"><a href="#field">Field</a></li>
-      </ul>
-  </nav>
+    <header>
+      <nav>
+        <ul class="topmenu">
+            <li class="topmenu"><a href="#about">About</a></li>
+            <li class="topmenu"><a href="#skill">Skill</a></li>
+            <li class="topmenu"><a href="#field">Field</a></li>
+            <li class="topmenu"><a href="#works">Works</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <h3 id="about">About</h3>
-    <ul>
-      <div style="text-align: left">
-        <img src="img/img1-1.jpg" width="201" height="269">
+  <div id="about" class="jump">
+    <h3>About</h3>
+     <div class="col-sm-6 profile-pic">
+       <img src="img/img1-2.jpeg" alt>
       </div>
-      <li>Hikaru Tomihara</li>
-      <li>Faculty of Data Science, Musashino University</li>
-      <li>趣味：映画鑑賞</li>
-      <li>目標：頭の中で考えたものをそのままアウトプットできるようになる!</li>
+     <ul>
+       <li>Hikaru Tomihara</li>
+       <li>Faculty of Data Science, Musashino University</li>
+       <li>趣味：映画鑑賞</li>
+       <li>目標：頭の中で考えたものをそのままアウトプットできるようになる!</li>
     </ul>
+  </div>
 
-    <h3 id="skill">Skill</h3>
+  <div id="skill" class="Skill">
+    <h3>Skill</h3>
     <ul>
       <li>Python</li>
       <li>Unity</li>
       <li>#C</li>
     </ul>
+  </div>
 
-    <h3 id="field">Field</h3>
+  <div id="field" class="Field">
+    <h3>Field</h3>
     <ul>
       <li>データサイエンス</li>
       <li>機械学習</li>
     </ul>
+  </div>
 
-    <img src="img/castle_higure.jpg">
-    <img src="img/nasa_station.jpg">
+  <div id="works" class="Works">
+    <h3>Wroks</h3>
+    <div class="Works">
+      <h4> 「メディアクリエーション最終課題」 </h4>
+      <p class="Works_doc">本文。 <br>説明</p>
+      <!-- <video src="images/final_question_movie_2.mp4" controls></video> -->
+      <!-- <object class="pdf" data="images/テキストマイニング202006.pdf" width=90% height=400></object> -->
+    </div>
+    <hr class="contents_sep">
+    <div class="Works">
+      <h4> 「人工知能基礎プレゼン」 </h4>
+      <p class="Works_doc">本文。 <br>説明</p>
+      <!-- <video src="images/final_question_movie_2.mp4" controls></video> -->
+      <!-- <object class="pdf" data="images/テキストマイニング202006.pdf" width=90% height=400></object> -->
+    </div>
+    <hr class="contents_sep">
+    <div class="Works">
+      <h4> 「データサイエンスマンダラート」 </h4>
+      <p class="Works_doc">本文。 <br>説明</p>
+      <!-- <video src="images/final_question_movie_2.mp4" controls></video> -->
+      <!-- <object class="pdf" data="images/テキストマイニング202006.pdf" width=90% height=400></object> -->
+    </div>
+    <hr class="contents_sep">
+    <div class="Works">
+      <h4> 「未来想像」 </h4>
+      <p class="Works_doc">本文。 <br>説明</p>
+      <!-- <video src="images/final_question_movie_2.mp4" controls></video> -->
+      <!-- <object class="pdf" data="images/テキストマイニング202006.pdf" width=90% height=400></object> -->
+    </div>
+  </div>
+    <!-- <img src="img/castle_higure.jpg">
+    <img src="img/nasa_station.jpg"> -->
 
     <footer>©︎2022 Hikaru Tomihara</footer>
 

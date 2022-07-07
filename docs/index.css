@@ -7,23 +7,57 @@
         padding-left: 0;
       }
   
+    
       li {
         margin:1em; 
         padding:1em;
       }
 }
  
+
+
+ul.topmenu li.topmenu{
+    list-style: none;
+    overflow: hidden;
+    float: left;
+}
+
+.Works_doc {
+    max-width: 95%;
+    padding-left: 5%;
+}
+
+hr {
+    height: 1px;
+    background-color: darkgray;
+    border: none;
+}
+.contents_sep {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+.profile img{
+    width: 35%;
+    margin: 35px;
+    object-fit: contain;
+    border-radius: 30px;
+}
+
 img{
     width: 100%;
     height: auto;
 }
 
-
-
 footer{
     text-align: center;
 }
 
+div {
+    margin-right: 8%;
+    margin-left: 8%;
+}
 
 body{
     font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
