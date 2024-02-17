@@ -290,7 +290,7 @@ img{
     padding-left: 5%;
 }
 
-.Works_1,.Works_2,.Works_3,.Works_4,.Works_5 {
+.Works_1,.Works_2,.Works_3,.Works_4,.Works_5,.Works_6,.Works_7 {
     border-top: solid 5px #B67B03;
     border-image: linear-gradient(to right, #B67B03 0%, #DAAF08 45%, #FEE9A0 70%, #DAAF08 85%, #B67B03 90% 100%);
     border-image-slice: 1;
