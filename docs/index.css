@@ -216,6 +216,19 @@ h3 {
 	}
   }
 
+.prof-content {
+  display: flex;
+}
+
+.left-column {
+  flex: 1;
+}
+
+.right-column {
+  flex: 2;
+  padding-left: 20px;
+}
+
 .prof-img {
     padding-block: 100px;
 }
