@@ -226,6 +226,7 @@ h3 {
 
 .right-column {
   flex: 2;
+  padding-block: 100px;
   padding-left: 20px;
 }
 
