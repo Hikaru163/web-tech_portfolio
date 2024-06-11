@@ -1,0 +1,406 @@
+@charset "UTF-8";
+
+/* Media Query */
+@media only screen and (max-width: 1920px) and (min-height:100vh ){
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Noto Serif JP', sans-serif;
+        font-weight: 400;
+        background-color: black;
+        width: 100%;
+    }
+}
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-weight: 400;
+    background-color: black;
+    width: 100%;
+}
+
+
+/* Background Image */
+.back-img {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute; 
+    z-index: 1; 
+    height: 100%;
+}
+
+/* Header Section */
+.header {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+}
+
+.head-logo {
+    position: absolute;
+    margin-top: 10.81%;
+    margin-left: 3.35%;
+    width: 34.75%;
+}
+
+.head-img {
+    position: absolute;
+    margin-top: 1.32%;
+    margin-left: 15.65%;
+    width: 84.3%;
+}
+
+.scroll {
+    position: absolute;
+    margin-top: 42%;
+    margin-left: 93.15%;
+    width: 4.35%;
+}
+
+/* Contents Section */
+.contents {
+    position: relative;
+    text-align: center;
+    max-width: 100%;
+    overflow: hidden;
+    display: block;
+    z-index: 10;
+    margin-right: 19%;
+    margin-left: 19%;
+    background-size: .1041666667vw 65.1041666667vw;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.45);
+}
+
+.step-sp {
+    padding-top: 55%;
+}
+
+.contents-step {
+    padding-top: 10.5%;
+}
+
+/* Frame Styles */
+.about-frame, .overview-frame, .artist_frame {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.45);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.85);
+    line-height: 3;
+}
+
+/* Frame ::before Styles */
+.about-frame::before, .overview-frame::before, .artist_frame::before {
+    position: absolute;
+    inset: max(4px, .4166666667vw);
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.about-frame::before {
+    background-image: url("../img/deco_up.png"), url("../img/deco_lr.png"), url("../img/deco_down.png");
+    background-position: top left, center right, bottom left;
+}
+
+.overview-frame::before {
+    background-image: url("../img/deco_up.png"), url("../img/deco_lr2.png"), url("../img/deco_down.png");
+    background-position: top left, center right, bottom left;
+}
+
+.artist_frame::before {
+    background-image: url("../img/deco_up.png"), url("../img/deco_lr3.png"), url("../img/deco_down.png");
+    background-position: top left, center right, bottom left;
+}
+
+/* About Section */
+.about {
+    width: 100%;
+    padding-top: 6%;
+    padding-bottom: 10%;
+    display: block;
+}
+
+.about h1 {
+    font-size: 2.25vw;
+    letter-spacing: 0.12em;
+    line-height: 2;
+    color: #FFCC5F;
+}
+
+.about p {
+    font-size: 0.845vw;
+    letter-spacing: 0.25em;
+    line-height: 2.2;
+}
+
+.about-step {
+    padding-top: 3.3%;
+}
+
+/* Centered Image */
+.centered-img {
+    margin: 0 auto;
+    width: 3.3%;
+}
+
+/* Meme Section */
+.meme {
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: rgba(255, 204, 95, 0.05);
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 1%;
+    padding-bottom: 4%;
+    text-align: center;
+    z-index: 6;
+}
+
+.meme::before, .meme::after {
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+    content: "";
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+}
+
+.meme::before {
+    background-image: url("../img/memu_up-left.png"), url("../img/memu_up-right.png"), url("../img/memu_down-left.png"), url("../img/memu_down-right.png");
+    background-position: top left, top right, bottom left, bottom right;
+    background-size: 2%, 2%, 2%, 2%;
+    opacity: 0.2;
+}
+
+.meme::after {
+    background-image: url("../img/memu_pen.png");
+    background-position: 50% 32%;
+    background-size: 45%;
+}
+
+.meme h2 {
+    color: #FFCC5F;
+    font-size: 1.8vw;
+    z-index: 6;
+    letter-spacing: 0.14em;
+}
+
+.meme p {
+    padding-top: 1%;
+    font-size: 0.8vw;
+    letter-spacing: 0.2em;
+}
+
+/* Overview Section */
+.overview {
+    width: 100%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    display: block;
+}
+
+.overview h2 {
+    font-size: 2.25vw;
+    letter-spacing: 0.12em;
+    line-height: 2;
+    color: #FFCC5F;
+}
+
+.information {
+    display: flex;
+    text-align: left;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.information p {
+    padding-top: 3.5%;
+    padding-left: 15%;
+    font-size: 0.9vw;
+    letter-spacing: 0.12em;
+    line-height: 2.5;
+    font-weight: 800;
+}
+
+/* Artist Frame */
+.artist_frame {
+    color: #FFCC5F;
+    text-align: center;
+    padding-top: 3.5%;
+    padding-bottom: 2%;
+}
+
+.artist_frame h3 {
+    font-size: 2.25vw;
+    letter-spacing: 0.12em;
+    line-height: 2;
+}
+
+.artist_block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-self: auto;
+    padding-top: 2%;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 1%;
+}
+
+.artist {
+    position: relative;
+    margin-top: 15px;
+    margin-left: 1.8%;
+    margin-right: 1.8%;
+    margin-bottom: 1.5%;
+    flex-grow: 1;
+    width: 100%;
+    height: auto;
+}
+
+.a_job {
+    font-size: 0.85vw;
+    letter-spacing: 0.14em;
+    color: #c10b00;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.a_name {
+    font-weight: 200;
+    font-size: 1.25vw;
+    letter-spacing: 0.14em;
+    margin-top: -7%;
+    color: white;
+}
+
+.btn-img {
+    margin-top: 1%;
+    cursor: pointer;
+    z-index: 200;
+    width: 300px;
+}
+
+/* Modal Styles */
+.modal-wrapper {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 100;
+}
+
+.modal-wrapper.show {
+    display: flex;
+}
+
+.modal_head {
+    position: absolute;
+    display: flex;
+    top: 35%;
+    left: 20%;
+    width: 65%;
+    justify-content: space-between;
+}
+
+.modal_img {
+    width: 35%;
+    height: 35%;
+}
+
+.modal_body {
+    text-align: left;
+    color: white;
+    padding-left: 50px;
+}
+
+.ma_job {
+    color: #c10b00;
+    text-align: left;
+    font-size: 1.2vw;
+    letter-spacing: 0.12em;
+}
+
+.ma_name, .ma_prof_head {
+    color: white;
+    text-align: left;
+}
+
+.ma_name {
+    font-size: 2.25vw;
+    letter-spacing: 0.12em;
+    line-height: 2;
+}
+
+.ma_prof_head {
+    line-height: 2;
+    background-image: url('../img/icon.png');
+    background-repeat: no-repeat;
+    background-position: 0 10px;
+    padding: 0 0 0 40px;
+}
+
+.ma_birth {
+    text-align: left;
+    font-size: 1.2vw;
+    letter-spacing: 0.12em;
+    line-height: 2;
+    padding-top: 1%;
+}
+
+.ma_prof {
+    padding-top: 3%;
+    text-align: left;
+    font-size: 1.2vw;
+    letter-spacing: 0.12em;
+    line-height: 2;
+}
+
+.ma_prof_right {
+    padding-left: 10%;
+}
+
+/* Close Button */
+.btn-close {
+    background-image: url("../img/icon_close.png");
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+footer img {
+    position: absolute;
+    z-index: 2;
+} 
+
+span.title {
+    color: #c10b00;
+  }
+
+span.sent {
+    color: #FFCC5F;
+    font-size: 1.2vw;
+}
